@@ -1,4 +1,7 @@
+import vaatteet.vaate;
 
-public class AbstractFactory {
+public abstract class AbstractFactory {
+	
+	abstract vaate haevaate(String vaateTyyppi);
 
 }
