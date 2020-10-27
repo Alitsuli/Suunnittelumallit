@@ -2,7 +2,7 @@ import vaatteet.*;
 
 public class BossTehdas extends AbstractFactory{
 
-	public vaate haevaate(String vaateTyyppi) {
+	public vaate haeVaate(String vaateTyyppi) {
 		switch (vaateTyyppi) {
 		case "Housut":
 			return new BossFarmari();
