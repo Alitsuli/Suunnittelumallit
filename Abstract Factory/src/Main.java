@@ -33,27 +33,27 @@ public class Main {
 		String tehdas = p.getProperty("tehdas").toString();
 		System.out.println(tehdas + " tehdas valittu");
 		
-		Set<vaate> v = new HashSet();
-		AbstractFactory VT = tuottaja.haeTehdas(tehdas);
+		Set<Vaate> v = new HashSet();
+		AbstractFactory VT = Tuottaja.haeTehdas(tehdas);
 		
 		v.add(VT.haeVaate("Housut"));
+		v.add(VT.haeVaate("Keng‰t"));
 		v.add(VT.haeVaate("Lippis"));
-		v.add(VT.haeVaate("Kengat"));
-		v.add(VT.haeVaate("Farmari"));
+		v.add(VT.haeVaate("Paita"));
 		
-		for(vaate vaate: v) {
-			vaate.pue();
+		for(Vaate Vaate: v) {
+			Vaate.pue();
 		}
 		
-		Iterator<vaate> iteraattori = v.iterator();
+		Iterator<Vaate> iteraattori = v.iterator();
 		System.out.println("Jasperilla on ");
 		while(iteraattori.hasNext()) {
-			vaate vaate = iteraattori.next();
+			Vaate Vaate = iteraattori.next();
 			
 			if(!iteraattori.hasNext()) {
-			System.out.println(vaate.toString() + " p‰‰ll‰.");
+			System.out.println(Vaate.toString() + " p‰‰ll‰.");
 			}else {
-				System.out.println(vaate.toString() + " ja ");
+				System.out.println(Vaate.toString() + " ja ");
 			}
 		}
 		

@@ -2,7 +2,7 @@ import vaatteet.*;
 
 public class AdidasTehdas extends AbstractFactory{
 
-	public vaate haeVaate(String vaateTyyppi) {
+	public Vaate haeVaate(String vaateTyyppi) {
 		switch (vaateTyyppi) {
 		case "Housut":
 			return new AdiFarmari();

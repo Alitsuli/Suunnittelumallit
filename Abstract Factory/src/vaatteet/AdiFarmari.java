@@ -1,6 +1,6 @@
 package vaatteet;
 
-public class AdiFarmari implements vaate{
+public class AdiFarmari implements Vaate{
 
 	public void pue() {
 		System.out.println("Adidas farmarit laitettu p‰‰lle!");

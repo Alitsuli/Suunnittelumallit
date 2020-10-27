@@ -1,6 +1,6 @@
 package vaatteet;
 
-public class AdiLippis implements vaate{
+public class AdiLippis implements Vaate{
 	
 	public void pue() {
 		System.out.println("Adidas lippis laitettu p‰‰lle!");

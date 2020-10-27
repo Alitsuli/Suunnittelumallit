@@ -1,6 +1,6 @@
 package vaatteet;
 
-public class BossPaita implements vaate{
+public class BossPaita implements Vaate{
 	
 	public void pue() {
 		System.out.println("Boss paidat laitettu p‰‰lle!");
