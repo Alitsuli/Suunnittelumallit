@@ -21,17 +21,17 @@ public class Main {
 		Osat prosessori = new Prosessori();
 		Osat verkkokortti = new Verkkokortti();
 		
-		/*
+		
 		kotelo.lisaaOsa(emolevy);
 		emolevy.lisaaOsa(muistipiiri);
 		emolevy.lisaaOsa(prosessori);
 		emolevy.lisaaOsa(naytonohjain);
-		emolevy.lisaaOsa(verkkokortti);*/
+		emolevy.lisaaOsa(verkkokortti);
 		
 		
 		
 		//muistipiiri.lisaaOsa(emolevy);
-		kotelo.lisaaOsa(muistipiiri);
+		//kotelo.lisaaOsa(muistipiiri);
 		
 		System.out.println("Tietokoneen hinta on " + kotelo.haeHinta());
 		
