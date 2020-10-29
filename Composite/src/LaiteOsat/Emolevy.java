@@ -9,6 +9,7 @@ public class Emolevy implements Osat{
 	
 	int hinta = 250;
 	
+	//hae hinta
 	public int haeHinta() {
 		int osienHinta = 0;
 		
