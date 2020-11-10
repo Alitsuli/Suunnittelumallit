@@ -1,6 +1,7 @@
 
 public class Lahiesimies extends Palkankorottaja{
-	double valtuusraja = 2 / 100 ;
+	
+	double valtuusraja = 0.02 ;
 	
 	public void prosessoriPyytaa(Palkankorotuspyynto pyynto) {
 		if(pyynto.getProsenttimaara() < valtuusraja) {

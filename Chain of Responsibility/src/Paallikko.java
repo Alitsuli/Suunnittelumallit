@@ -1,7 +1,7 @@
 
 public class Paallikko extends Palkankorottaja{
 	
-	double valtuusraja = 5 / 100 ;
+	double valtuusraja = 0.05 ;
 	
 	public void prosessoriPyytaa(Palkankorotuspyynto pyynto) {
 		if(pyynto.getProsenttimaara() < valtuusraja) {

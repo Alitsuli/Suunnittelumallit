@@ -11,7 +11,7 @@ public abstract class Palkankorottaja {
 	private Palkankorottaja seuraaja;
 	
 	public void setSeuraaja(Palkankorottaja seuraaja) {
-		seuraaja = seuraaja;
+		this.seuraaja = seuraaja;
 	}
 	
 	public void prosessoriPyytaa(Palkankorotuspyynto pyynto) {
