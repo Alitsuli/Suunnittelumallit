@@ -1,4 +1,5 @@
 
+//tehtävä 11
 public class Memento {
 	
 	private int state;

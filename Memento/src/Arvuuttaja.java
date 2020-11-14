@@ -1,5 +1,6 @@
 import java.util.Random; 
 
+//tehtävä 11
 public class Arvuuttaja {
 	
 	Random random = new Random();

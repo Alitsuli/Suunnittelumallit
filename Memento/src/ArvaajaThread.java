@@ -1,4 +1,4 @@
-
+//tehtävä 11
 public class ArvaajaThread  extends Thread{
 	
 	Arvaaja arvaaja;
