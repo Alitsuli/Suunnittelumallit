@@ -23,11 +23,11 @@ public class Arvaaja {
 		
 		if(arvuuttaja.tarkista(memento, luku)) {
 			arvaukset++;
-			System.out.println(nimi + " arvasi oikein " + luku + "  menetetty yritys " + arvaukset);
+			System.out.println(nimi + " arvasi OIKEIN numero " + luku + " \nArvauksien yhteismäärä: " + arvaukset +" kerta");
 			return true;
 		} else {
 			arvaukset++;
-			System.out.println(nimi + " arvasi väärin " + luku);
+			System.out.println(nimi + " arvasi väärin numero " + luku);
 			return false;
 		}
 	}
