@@ -19,27 +19,24 @@ public class HahmoKonteksti implements HahmoState{
 	}
 		
 
-	@Override
+
 	public void syo() {
-		// TODO Auto-generated method stub
 		this.state.syo();
 		xp += 10;
 		visitor.visit(this);
 		
 	}
 
-	@Override
+
 	public void puolusta() {
-		// TODO Auto-generated method stub
 		this.state.puolusta();
 		xp += 20;
 		visitor.visit(this);
 		
 	}
 
-	@Override
+
 	public void hyokkaa() {
-		// TODO Auto-generated method stub
 		this.state.hyokkaa();
 		xp += 50;
 		visitor.visit(this);

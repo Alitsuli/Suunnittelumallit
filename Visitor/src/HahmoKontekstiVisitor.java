@@ -8,7 +8,6 @@ public class HahmoKontekstiVisitor implements HahmoVisitor{
 
 	@Override
 	public void visit(HahmoKonteksti hahmo) {
-		// TODO Auto-generated method stub
 		if(hahmo.getXp() < 100) {
 			hahmo.seState(charizard);
 		}else if (hahmo.getXp() > 100 && hahmo.getXp() < 151) {
