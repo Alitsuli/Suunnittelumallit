@@ -3,19 +3,21 @@ public class Main {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 
-		ClockTimer timer = new ClockTimer();
-		boolean timerOn = true;
+		Clock digitalClock1 = new DigitalClock();
+		Clock digitalClock2 = (Clock) digitalClock1.clone();
 
-		DigitalClock dc = new DigitalClock(timer);
+		System.out.println("Kello 1 aika: " + digitalClock1.getTime());
+		System.out.println("Kello 2 aika: " + digitalClock2.getTime());
 
-		while (timerOn == true) {
+		digitalClock1.setTime(50);
+		System.out.println("Kello 1 aika: " + digitalClock1.getTime());
+		System.out.println("Kello 2 aika: " + digitalClock2.getTime());
 
-			// 1 sec = 1000 ms
-			Thread.sleep(1000);
-			timer.tick();
-		}
+		digitalClock2.setTime(60);
+		System.out.println("Kello 1 aika: " + digitalClock1.getTime());
+		System.out.println("Kello 2 aika: " + digitalClock2.getTime());
 
 	}
 
