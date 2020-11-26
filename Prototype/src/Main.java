@@ -15,6 +15,7 @@ public class Main {
 		System.out.println("Kello 1 aika: " + digitalClock1.getTime());
 		System.out.println("Kello 2 aika: " + digitalClock2.getTime());
 
+		digitalClock1.setTime(30);
 		digitalClock2.setTime(60);
 		System.out.println("Kello 1 aika: " + digitalClock1.getTime());
 		System.out.println("Kello 2 aika: " + digitalClock2.getTime());
