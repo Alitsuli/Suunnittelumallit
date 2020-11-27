@@ -17,7 +17,7 @@ public class Main {
 
 		Iterator i = lista.iterator();
 
-		// s‰ikeill‰ on jaettu iteraattori eli lista k‰yd‰‰n vain kerran l‰pi
+		// a) s‰ikeill‰ on jaettu iteraattori eli lista k‰yd‰‰n vain kerran l‰pi
 		Saie s1 = new Saie(i, "S‰ie 1");
 		Saie s2 = new Saie(i, "S‰ie 2");
 
@@ -32,7 +32,7 @@ public class Main {
 
 		}
 
-		// Molemilla on omat iteraattorit eli molemmat k‰yv‰t listan l‰pi
+		// b) Molemilla on omat iteraattorit eli molemmat k‰yv‰t listan l‰pi
 		System.out.println("\nS‰ikeill‰ on omat iteraattorit:");
 
 		Iterator i1 = lista.iterator();
@@ -51,7 +51,7 @@ public class Main {
 
 		}
 
-		// ei voi lis‰t‰ kesken iteroinnin
+		// c) ei voi lis‰t‰ kesken iteroinnin
 		i = lista.iterator();
 		while (i.hasNext()) {
 			String nextString = (String) i.next();
@@ -60,7 +60,7 @@ public class Main {
 			}
 		}
 
-		// remove testaus
+		// d) remove testaus
 		System.out.println("\nRemove tetaus: ");
 		i = lista.iterator();
 		while (i.hasNext()) {
